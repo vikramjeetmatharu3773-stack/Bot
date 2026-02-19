@@ -1,0 +1,22 @@
+<!doctype html>
+<html><head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Wallet - AllFetchX</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white p-4">
+  <div class="max-w-md mx-auto">
+    <h1 class="text-xl font-bold">Wallet</h1>
+    <div class="mt-4 bg-white/5 p-4 rounded">
+      <div>Balance: <span id="bal">0.00</span></div>
+      <form id="withdrawForm" class="mt-3">
+        <input name="amount" placeholder="Amount" class="w-full p-2 rounded bg-transparent border" />
+        <input name="address" placeholder="Crypto address" class="w-full p-2 rounded bg-transparent border mt-2" />
+        <button class="mt-2 bg-indigo-600 px-3 py-2 rounded">Request Withdraw</button>
+      </form>
+    </div>
+  </div>
+  <script>
+    document.getElementById('withdrawForm').addEventListener('submit', e=>{e.preventDefault(); alert('Withdraw requested (demo)')})
+  </script>
+</body></html>

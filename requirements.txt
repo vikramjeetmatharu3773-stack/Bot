@@ -1,0 +1,9 @@
+fastapi>=0.95
+uvicorn[standard]>=0.22
+python-telegram-bot>=20.0
+SQLAlchemy>=2.0
+python-dotenv>=1.0
+passlib[bcrypt]>=1.7
+PyJWT>=2.8
+httpx>=0.24
+Jinja2>=3.1
